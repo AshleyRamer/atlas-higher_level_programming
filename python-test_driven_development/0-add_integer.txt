@@ -1,0 +1,61 @@
+==========================
+0-add_integer.py text file
+==========================
+
+0-add_integer.py module only has one function called ``add_integer()``.
+
+To import this module:
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Numbers
+=======
+
+``add_integer()`` returns the summary of its arguments. For numbers,
+that value is equivalent to using the ``+`` operator:
+
+	>>> add_integer(1, 2)
+	3
+
+It also works with negative values.
+
+	>>> add_integer(100, -2)
+	98
+
+It also works for a single argument a, b has default value 98.
+
+	>>> add_integer(2)
+	100
+
+It also works with floating-point values.
+
+	>>> add_integer(100.3, -2)
+	98
+
+Non-Numbers
+===========
+
+arguments ``a`` and ``b`` must be integers or floats, otherwise raise TypeError
+message ``a must be an integer`` or ``b must be an integer``
+
+	>>> add_integer(4, "School")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+Only argument is ``None``, it alse raise exception TypeError message.
+
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+OverflowError: cannot convert float infinity to integer
+
+	>>> add_integer(float('inf'), float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+ValueError: cannot convert float NaN to integer
+
+	>>> add_integer(float('NaN'), float('NaN'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
