@@ -16,3 +16,4 @@ class Student:
         a Student instance
         """
         return vars(self)
+    
