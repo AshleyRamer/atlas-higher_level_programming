@@ -3,5 +3,6 @@
 
 
 def class_to_json(obj):
-    """Returns the dictionary definition with simple data struct for JSON serialization of an object."""
+    """Returns the definition with simple data struct for 
+    JSON serialization of an object."""
     return vars(obj)
