@@ -24,4 +24,3 @@ class Student:
             if item in dict:
                 studentInfo[item] = dict[item]
         return studentInfo
-    
