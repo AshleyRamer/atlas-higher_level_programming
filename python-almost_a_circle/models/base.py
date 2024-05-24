@@ -10,7 +10,7 @@ class Base:
             __init__: inits instance with
             user supplied for id or id from Base instance
     """
-    __nb_objects =0 
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """initializes object"""
