@@ -16,7 +16,7 @@ class Base:
             self.id = Base.__nb_objects
 
     def int_validator(self, value, name):
-        """integer validator"""
+        """Integer Validator"""
 
         if type(value) is not int:
             raise TypeError(name + " must be an integer")
