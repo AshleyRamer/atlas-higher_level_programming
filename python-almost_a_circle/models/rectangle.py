@@ -47,11 +47,11 @@ class Rectangle(Base):
                 setattr(self, k, v)
                 
 
-           @property
+          @property
           def width(self):
              return self.__width
         
-           @property
+          @property
           def height(self):
              return self.__height
         
@@ -59,7 +59,7 @@ class Rectangle(Base):
           def x(self):
              return self.__x
         
-          property
+          @property
           def y(self):
              return self.__y
         
@@ -77,7 +77,6 @@ class Rectangle(Base):
           def x(self, x):
              self.int_validator(x, "x")
              self.__x = x
-
 
           @y.setter
           def y(self, y):
