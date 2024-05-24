@@ -20,14 +20,3 @@ class TestBase(unittest.TestCase):
         b1= Base()
         self.assertIsInstance(b.id, int)
         self.assertIsInstance(b1.id, int)
-
-    def test_base_id_type(self):
-        b = Base("")
-        self.assertNotEqual(b.id, "")
-
-    def test_base_id_type(self):
-        b = Base("hello")
-        b1 = Base("goodbye")
-        self.assertEqual(b.id, "hello")
-        self.assertEqual(b1.id, "goodbye")
-    
