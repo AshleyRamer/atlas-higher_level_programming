@@ -2,7 +2,13 @@
 """defines base class"""
 
 class Base:
-    """private class variable"""
+    """
+    Attributes:
+        __nb_objects: instance counter
+    Methods:
+        __init__: inits instance with
+        user supplied for id or id from Base instance
+    """
     __nb_objects =0 
 
     def __init__(self, id=None):
