@@ -2,9 +2,11 @@
 """defines base class"""
 
 class Base:
+    """private class variable"""
     __nb_objects =0 
 
     def __init__(self, id=None):
+        """initializes object"""
         if id is not None:
             self.id = id
         else:
