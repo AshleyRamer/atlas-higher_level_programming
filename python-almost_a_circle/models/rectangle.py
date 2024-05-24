@@ -24,7 +24,7 @@ class Rectangle(Base):
         self.__y = y
 
     def __str__(self):
-        """STRING representation of triangle"""
+        """STRING representation of rectangle"""
         rep = "[Rectangle] ({}) {}/{}".format(self.id, self.x, self.y)
         rep += " - {}/{}".format(self.width, self.height)
         return rep
