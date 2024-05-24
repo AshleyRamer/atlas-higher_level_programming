@@ -77,7 +77,7 @@ class Rectangle(Base):
     def width(self, width):
         if isinstance(width, int) and width > 0:
             self.__width = width
-  
+
     @height.setter
     def height(self, height):
         if isinstance(height, int) and height > 0:
@@ -87,7 +87,7 @@ class Rectangle(Base):
     def x(self, x):
         if isinstance(x, int) and x >= 0:
             self.__x = x
-  
+
     @y.setter
     def y(self, y):
         if isinstance(y, int) and y >= 0:
