@@ -27,7 +27,7 @@ class Rectangle(Base):
             """ Visual representation of Rectangle """
             print("\n" * self.y, end='')
             for row in range(self.height):
-            # print(" " * self.x + "#" * self.width)
+            print(" " * self.x + "#" * self.width)
 
           def area(self):
             """ Area of Rectangle """
