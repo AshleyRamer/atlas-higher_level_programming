@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """defines base class"""
 
+
 class Base:
     """
     Attributes:
