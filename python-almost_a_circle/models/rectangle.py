@@ -52,6 +52,7 @@ class Rectangle(Base):
         if args:
             for i in range(len(my_list)):
                 setattr(self, attr[i], my_list[i])
+
         else:
             for k, v in kwargs.items():
                 setattr(self, k, v)
@@ -76,26 +77,19 @@ class Rectangle(Base):
     def width(self, width):
         if isinstance(width, int) and width > 0:
             self.__width = width
-        else:
-            raise TypeError("width must be an int > 0")
-
+        
     @height.setter
     def height(self, height):
         if isinstance(height, int) and height > 0:
             self.__height = height
-        else:
-            raise TypeError("height must be an int > 0")
 
     @x.setter
     def x(self, x):
         if isinstance(x, int) and x >= 0:
             self.__x = x
-        else:
-            raise TypeError("x must be an int >= 0")
-
+        
     @y.setter
     def y(self, y):
         if isinstance(y, int) and y >= 0:
             self.__y = y
-        else:
-            raise TypeError("y must be an int >= 0")
+        
