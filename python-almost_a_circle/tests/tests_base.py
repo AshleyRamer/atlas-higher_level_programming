@@ -8,15 +8,27 @@ class TestBase(unittest.TestCase):
     """Test Base"""
 
     def test_base_id(self):
-        b1 = Base(12)
-        self.assertEqual(b1.id, 12)
+        b = Base(12)
+        self.assertEqual(b.id, 12)
+        b1 = Base()
         b2 = Base()
-        b3 = Base()
-        self.assertEqual(b2.id, 1)
-        self.assertEqual(b3.id, 2)
+        self.assertEqual(b1.id, 1)
+        self.assertEqual(b2.id, 2)
 
-    def test_base_id_type(self):
-        b = Base(500)
-        b1= Base()
-        self.assertIsInstance(b.id, int)
-        self.assertIsInstance(b1.id, int)
+    def test_base_id_number(self):
+        b3 = Base(500)
+        b4= Base(12790)
+        self.assertIsInstance(b3.id, int)
+        self.assertIsInstance(b4.id, int)
+
+    def test_base_id_string(self):
+        b5 = Base("hello")
+        self.assertEqual(b5.id, "hello")
+
+    def test_base_id_empty(self):
+        b6 = Base("")
+        self.assertEqual(b6.id, "")
+
+if __name__ == "__main__":
+    unittest.main()
+    
