@@ -3,7 +3,7 @@
 import json
 
 class Base:
-    """Attributes: __nb_objects: instance counter. Methods: __init__: instance counter"""
+    """Attributes: __nb_objects: Instance counter. Methods: __init__: Initializes from Base instance"""
 
     __nb_objects = 0
 
