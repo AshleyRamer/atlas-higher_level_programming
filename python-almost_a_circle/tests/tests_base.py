@@ -29,6 +29,11 @@ class TestBase(unittest.TestCase):
         b6 = Base("")
         self.assertEqual(b6.id, "")
 
+    """ does not get checks """
+    def test_id_list(self):
+        b4 = Base([3,4])
+        self.assertEqual(b4.id, [3,4])
+
 if __name__ == "__main__":
     unittest.main()
     
