@@ -5,7 +5,7 @@ import json
 
 class Base:
     """
-        Attributes: __nb_objects: Instance counter. 
+        Attributes: __nb_objects: Instance counter.
         Methods: __init__: Initializes from Base instance
     """
 
