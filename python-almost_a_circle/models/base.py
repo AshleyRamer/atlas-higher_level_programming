@@ -67,7 +67,7 @@ class Base:
                 if len(my_str) > 2:
                     for dirt in cls.from_json_string(my_str):
                         list_of_instances.append(cls.create(**dirt))
-        except:
+        except ValueError:
             pass
         return list_of_instances
 
