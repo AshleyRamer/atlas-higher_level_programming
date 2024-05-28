@@ -2,8 +2,12 @@
 """defines base class"""
 import json
 
+
 class Base:
-    """Attributes: __nb_objects: Instance counter. Methods: __init__: Initializes from Base instance"""
+    """
+        Attributes: __nb_objects: Instance counter. 
+        Methods: __init__: Initializes from Base instance
+    """
 
     __nb_objects = 0
 
