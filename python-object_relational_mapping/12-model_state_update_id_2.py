@@ -6,7 +6,9 @@ from sys import argv
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
-    my_url = "mysql+mysqldb://{}:{}@localhost/{}"
+    username = sys.argv[1]
+    password = sys.argv[2]
+    db_name = sys.argv[3]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.\
                            format(username, password, db_name))
     Session = sessionmaker(bind=engine)
