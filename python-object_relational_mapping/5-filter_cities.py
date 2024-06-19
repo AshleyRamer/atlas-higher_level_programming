@@ -20,3 +20,4 @@ if __name__ == "__main__":
     for tup in rows:
         x.append(str(tup[0]))
     print(", ".join(x))
+    

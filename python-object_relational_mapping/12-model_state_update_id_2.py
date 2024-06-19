@@ -16,3 +16,4 @@ if __name__ == "__main__":
     for instance in session.query(State).filter(State.name.ilike('%a%')):
         session.delete(instance)
     session.commit()
+    
