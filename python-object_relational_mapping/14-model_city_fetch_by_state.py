@@ -19,4 +19,4 @@ if __name__ == "__main__":
         State.name, City.id, City.name).filter(
             City.state_id == State.id).order_by(City.id):
         print("{}: ({}) {}".format(state_name, city_id, city_name))
-        
+      
